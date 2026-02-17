@@ -179,9 +179,7 @@ function initScrollAnimations() {
     
     const animateElements = document.querySelectorAll('.service-card, .menu-item, .feature-item, .contact-item, .gallery-item');
     animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease';
+        // Don't hide initially, just observe for animation
         observer.observe(el);
     });
 }
