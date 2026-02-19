@@ -1547,3 +1547,24 @@ p {
     white-space: nowrap;
     border-width: 0;
 }
+
+/* ========== DARK MODE ========== */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --text-primary: #1a1a1a;
+    --text-secondary: #71717a;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+}
+
+body {
+    background: var(--bg-primary, #ffffff);
+    color: var(--text-primary, #1a1a1a);
+    transition: background 0.3s ease, color 0.3s ease;
+}
