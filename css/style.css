@@ -262,6 +262,7 @@ p {
     position: relative;
     z-index: 100;
     animation: fadeInUp 1s ease-out;
+    padding-top: 90px;
 }
 
 .hero-badge-modern {
