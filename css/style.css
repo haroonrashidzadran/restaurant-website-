@@ -1494,3 +1494,23 @@ p {
     transform: translateY(5px);
     box-shadow: 0 0 0 var(--primary-dark);
 }
+
+/* ========== PRINT STYLES ========== */
+@media print {
+    .navbar, .back-to-top, .scroll-progress, footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}
