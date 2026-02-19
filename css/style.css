@@ -1395,3 +1395,26 @@ p {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(201, 162, 39, 0.3);
 }
+
+/* ========== FLOATING ANIMATION ========== */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.float-slow {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float-rotate {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.float-rotate {
+    animation: float-rotate 4s ease-in-out infinite;
+}
