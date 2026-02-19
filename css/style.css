@@ -1439,3 +1439,32 @@ p {
 .shine:hover::before {
     left: 100%;
 }
+
+/* ========== TEXT REVEAL ANIMATION ========== */
+@keyframes text-reveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.text-reveal {
+    animation: text-reveal 1s ease-out;
+}
+
+@keyframes text-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-slide-up {
+    animation: text-slide-up 0.8s ease-out;
+}
