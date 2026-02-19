@@ -1468,3 +1468,29 @@ p {
 .text-slide-up {
     animation: text-slide-up 0.8s ease-out;
 }
+
+/* ========== ENHANCED BUTTON EFFECTS ========== */
+.btn-glow {
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.5);
+    transition: var(--transition);
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 40px rgba(201, 162, 39, 0.8);
+}
+
+.btn-3d {
+    box-shadow: 0 5px 0 var(--primary-dark);
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+.btn-3d:hover {
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 var(--primary-dark);
+}
+
+.btn-3d:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 var(--primary-dark);
+}
