@@ -726,7 +726,7 @@ p {
     border: none;
     padding: var(--space-md) var(--space-xl);
     border-radius: var(--radius-full);
-    color: var(--gray-900);
+    color: var(--dark);
     font-weight: 600;
     font-size: 0.9375rem;
     transition: var(--transition);
@@ -735,7 +735,7 @@ p {
 .menu-tabs .nav-link:hover,
 .menu-tabs .nav-link.active {
     background: var(--primary);
-    color: var(--lighter);
+    color: var(--dark);
     box-shadow: var(--shadow-glow);
 }
 
