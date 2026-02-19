@@ -1073,3 +1073,14 @@ p {
 .accordion-body { padding: var(--space-lg); color: var(--gray-600); background: var(--lighter); }
 /* Animation States */
 .animate-in { opacity: 1 !important; transform: translateY(0) !important; }
+
+/* ========== SCROLL PROGRESS BAR ========== */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
