@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haroonrashidzadran.github.io/restaurant-website-/sitemap.xml
